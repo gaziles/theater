@@ -7,6 +7,9 @@ def menu():
     print("2 - dodaj teatr")
     print("3 - usuń teatr")
     print("4 - aktualizuj teatr")
+    print("5 - wyświetl klientów")
+    print("6 - wyświetl pracowników")
+    print("7 - wyświetl spektakle")
 
 
 def main():
@@ -14,6 +17,7 @@ def main():
 
         menu()
 
+        menu()
         choice = input("Wybierz opcję: ")
 
         if choice == "0":
