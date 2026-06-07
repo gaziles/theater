@@ -1,5 +1,8 @@
+from theater_lib.controller import *
+
+
 def menu():
-    print("0 - zakończ program")
+    print("\n0 - zakończ program")
     print("1 - wyświetl teatry")
     print("2 - dodaj teatr")
     print("3 - usuń teatr")
@@ -11,6 +14,9 @@ def menu():
 
 def main():
     while True:
+
+        menu()
+
         menu()
         choice = input("Wybierz opcję: ")
 
@@ -19,25 +25,16 @@ def main():
             break
 
         elif choice == "1":
-            print("Wybrano wyświetlanie teatrów")
+            show_theaters()
 
         elif choice == "2":
-            print("Wybrano dodawanie teatru")
+            add_theater()
 
         elif choice == "3":
-            print("Wybrano usuwanie teatru")
+            delete_theater()
 
         elif choice == "4":
-            print("Wybrano aktualizację teatru")
-
-        elif choice == "5":
-            print("Wybrano wyświetlanie klientów")
-
-        elif choice == "6":
-            print("Wybrano wyświetlanie pracowników")
-
-        elif choice == "7":
-            print("Wybrano wyświetlanie spektakli")
+            update_theater()
 
         else:
             print("Nieprawidłowa opcja")
