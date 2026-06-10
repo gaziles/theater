@@ -16,7 +16,6 @@ def add_theater():
     theater = {
         "name": name,
         "location": location,
-        "performances": [],
         "clients": [],
         "employees": []
     }
@@ -59,7 +58,7 @@ def show_clients():
         print(f"Teatr: {theater['name']}")
 
         for client in theater["clients"]:
-            print(client)
+            print(client["name"])
 
 
 def add_client():
@@ -68,7 +67,13 @@ def add_client():
 
     for theater in theaters:
         if theater["name"] == theater_name:
-            theater["clients"].append(client_name)
+
+            theater["clients"].append(
+                {
+                    "name": client_name,
+                    "performances": []
+                }
+            )
 
             print("Klient został dodany.")
             return
@@ -81,13 +86,17 @@ def delete_client():
     client_name = input("Podaj imię klienta: ")
 
     for theater in theaters:
+
         if theater["name"] == theater_name:
 
-            if client_name in theater["clients"]:
-                theater["clients"].remove(client_name)
+            for client in theater["clients"]:
 
-                print("Klient został usunięty.")
-                return
+                if client["name"] == client_name:
+
+                    theater["clients"].remove(client)
+
+                    print("Klient został usunięty.")
+                    return
 
             print("Nie znaleziono klienta.")
             return
@@ -123,9 +132,11 @@ def delete_employee():
     employee_name = input("Podaj imię pracownika: ")
 
     for theater in theaters:
+
         if theater["name"] == theater_name:
 
             if employee_name in theater["employees"]:
+
                 theater["employees"].remove(employee_name)
 
                 print("Pracownik został usunięty.")
@@ -135,3 +146,44 @@ def delete_employee():
             return
 
     print("Nie znaleziono teatru.")
+
+
+def show_client_performances():
+
+    client_name = input("Podaj imię klienta: ")
+
+    for theater in theaters:
+
+        for client in theater["clients"]:
+
+            if client["name"] == client_name:
+
+                print("\nObejrzane spektakle:")
+
+                for performance in client["performances"]:
+                    print(performance)
+
+                return
+
+    print("Nie znaleziono klienta.")
+
+
+def add_performance_to_client():
+
+    client_name = input("Podaj imię klienta: ")
+    performance = input("Podaj nazwę spektaklu: ")
+
+    for theater in theaters:
+
+        for client in theater["clients"]:
+
+            if client["name"] == client_name:
+
+                client["performances"].append(
+                    performance
+                )
+
+                print("Dodano spektakl klientowi.")
+                return
+
+    print("Nie znaleziono klienta.")
