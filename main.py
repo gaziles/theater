@@ -1,5 +1,9 @@
 from theater_lib.controller import *
-from theater_lib.map import generate_theater_map
+from theater_lib.map import (
+    generate_theater_map,
+    generate_clients_map,
+    generate_employees_map
+)
 
 
 def menu():
@@ -17,6 +21,8 @@ def menu():
     print("11 - wyświetl spektakle klienta")
     print("12 - dodaj spektakl klientowi")
     print("13 - mapa teatrów")
+    print("14 - mapa klientów")
+    print("15 - mapa pracowników")
 
 
 def main():
@@ -68,6 +74,12 @@ def main():
 
         elif choice == "13":
             generate_theater_map()
+
+        elif choice == "14":
+            generate_clients_map()
+
+        elif choice == "15":
+            generate_employees_map()
 
         else:
             print("Nieprawidłowa opcja")

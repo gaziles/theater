@@ -54,6 +54,7 @@ def update_theater():
 
 def show_clients():
     for theater in theaters:
+
         print()
         print(f"Teatr: {theater['name']}")
 
@@ -64,13 +65,16 @@ def show_clients():
 def add_client():
     theater_name = input("Podaj nazwę teatru: ")
     client_name = input("Podaj imię klienta: ")
+    client_location = input("Podaj miasto klienta: ")
 
     for theater in theaters:
+
         if theater["name"] == theater_name:
 
             theater["clients"].append(
                 {
                     "name": client_name,
+                    "location": client_location,
                     "performances": []
                 }
             )
@@ -106,20 +110,29 @@ def delete_client():
 
 def show_employees():
     for theater in theaters:
+
         print()
         print(f"Teatr: {theater['name']}")
 
         for employee in theater["employees"]:
-            print(employee)
+            print(employee["name"])
 
 
 def add_employee():
     theater_name = input("Podaj nazwę teatru: ")
     employee_name = input("Podaj imię pracownika: ")
+    employee_location = input("Podaj miasto pracownika: ")
 
     for theater in theaters:
+
         if theater["name"] == theater_name:
-            theater["employees"].append(employee_name)
+
+            theater["employees"].append(
+                {
+                    "name": employee_name,
+                    "location": employee_location
+                }
+            )
 
             print("Pracownik został dodany.")
             return
@@ -135,12 +148,14 @@ def delete_employee():
 
         if theater["name"] == theater_name:
 
-            if employee_name in theater["employees"]:
+            for employee in theater["employees"]:
 
-                theater["employees"].remove(employee_name)
+                if employee["name"] == employee_name:
 
-                print("Pracownik został usunięty.")
-                return
+                    theater["employees"].remove(employee)
+
+                    print("Pracownik został usunięty.")
+                    return
 
             print("Nie znaleziono pracownika.")
             return
@@ -179,9 +194,7 @@ def add_performance_to_client():
 
             if client["name"] == client_name:
 
-                client["performances"].append(
-                    performance
-                )
+                client["performances"].append(performance)
 
                 print("Dodano spektakl klientowi.")
                 return

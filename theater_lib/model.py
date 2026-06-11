@@ -3,113 +3,146 @@ theaters = [
     {
         'name': 'Teatr Aurora',
         'location': 'Warszawa',
+
         'clients': [
             {
-                'name': 'Anna Słońce',
-                'performances': ['Hamlet', 'Makbet']
+                'name': 'Anna Nowak',
+                'location': 'Warszawa',
+                'performances': ['Hamilton', 'Cats', 'Chicago']
             },
             {
-                'name': 'Kamil Noga',
-                'performances': ['Hamlet', 'Noce i dnie']
+                'name': 'Kamil Śruba',
+                'location': 'Płock',
+                'performances': ['Cats', 'Hamilton']
             }
         ],
-        'employees': ['Jan Kowalski', 'Maria Nowak']
+
+        'employees': [
+            {
+                'name': 'Jan Kowalski',
+                'location': 'Sochaczew'
+            },
+            {
+                'name': 'Maria Nowak',
+                'location': 'Radom'
+            }
+        ]
     },
 
     {
-        'name': 'Teatr Feniks',
+        'name': 'Teatr Narodowy',
         'location': 'Kraków',
+
         'clients': [
             {
-                'name': 'Piotr Drzazga',
-                'performances': ['Dziady', 'Lalka']
+                'name': 'Piotr Zieliński',
+                'location': 'Kraków',
+                'performances': ['Dziady', 'Wesele']
             },
             {
-                'name': 'Magda Ćwir',
-                'performances': ['Wesele', 'Hamlet']
+                'name': 'Magda Lis',
+                'location': 'Wieliczka',
+                'performances': ['Wesele', 'Dziady', 'Hamlet']
             }
         ],
-        'employees': ['Adam Nowak', 'Karolina Lis']
+
+        'employees': [
+            {
+                'name': 'Adam Nowak',
+                'location': 'Zakopane'
+            },
+            {
+                'name': 'Karolina Lis',
+                'location': 'Częstochowa'
+            }
+        ]
+    },
+
+    {
+        'name': 'Teatr Komedia',
+        'location': 'Gdańsk',
+
+        'clients': [
+            {
+                'name': 'Tomasz Wiśniewski',
+                'location': 'Gdańsk',
+                'performances': ['Mayday', 'Boeing Boeing']
+            },
+            {
+                'name': 'Ewa Kaczmarek',
+                'location': 'Sopot',
+                'performances': ['Mayday', 'Kolacja dla głupca']
+            }
+        ],
+
+        'employees': [
+            {
+                'name': 'Paweł Wójcik',
+                'location': 'Koszalin'
+            },
+            {
+                'name': 'Agnieszka Mazur',
+                'location': 'Gdynia'
+            }
+        ]
     },
 
     {
         'name': 'Teatr Horyzont',
-        'location': 'Białystok',
-        'clients': [
-            {
-                'name': 'Ola Pawelec',
-                'performances': ['Balladyna', 'Szalone nożyczki']
-            },
-            {
-                'name': 'Paweł Olewiec',
-                'performances': ['Zemsta', 'Teściowie']
-            }
-        ],
-        'employees': ['Piotr Zieliński', 'Ewa Lis']
-    },
+        'location': 'Wrocław',
 
-    {
-        'name': 'Teatr Orion',
-        'location': 'Poznań',
         'clients': [
             {
-                'name': 'Natalia Noga',
-                'performances': ['Biesy', 'Romeo i Julia']
+                'name': 'Natalia Dąbrowska',
+                'location': 'Wrocław',
+                'performances': ['Makbet', 'Hamlet', 'Otello']
             },
             {
-                'name': 'Michał Ręka',
-                'performances': ['Król Lear', 'Nasza klasa']
+                'name': 'Michał Sikora',
+                'location': 'Legnica',
+                'performances': ['Makbet', 'Król Lear']
             }
         ],
-        'employees': ['Rafał Sikora', 'Anna Duda']
-    },
 
-    {
-        'name': 'Teatr Gwiazda',
-        'location': 'Gdańsk',
-        'clients': [
+        'employees': [
             {
-                'name': 'Damian Trzmiel',
-                'performances': ['Romeo i Julia', 'Burza']
+                'name': 'Rafał Kurek',
+                'location': 'Zielona Góra'
             },
             {
-                'name': 'Sandra Cola',
-                'performances': ['Otello', 'Kordian']
+                'name': 'Joanna Maj',
+                'location': 'Łódź'
             }
-        ],
-        'employees': ['Tomasz Kurek', 'Iwona Maj']
-    },
-
-    {
-        'name': 'Teatr Scena Nova',
-        'location': 'Radom',
-        'clients': [
-            {
-                'name': 'Marta Sok',
-                'performances': ['Antygona', 'Tango']
-            },
-            {
-                'name': 'Bartek Róża',
-                'performances': ['Skąpiec', 'Antygona']
-            }
-        ],
-        'employees': ['Andrzej Bąk', 'Katarzyna Lis']
+        ]
     },
 
     {
         'name': 'Teatr Panorama',
-        'location': 'Szczecin',
+        'location': 'Poznań',
+
         'clients': [
             {
-                'name': 'Łukasz Mrowiec',
-                'performances': ['Hair', 'Faust']
+                'name': 'Łukasz Pawlak',
+                'location': 'Poznań',
+                'performances': ['Hair', 'Mistrz i Małgorzata']
             },
             {
-                'name': 'Weronika Motyka',
-                'performances': ['Cats', 'Don Juan']
+                'name': 'Weronika Sowa',
+                'location': 'Toruń',
+                'performances': ['Hair', 'Cats', 'Chicago']
             }
         ],
-        'employees': ['Kamil Górski', 'Marta Sikora']
+
+        'employees': [
+            {
+                'name': 'Kamil Górski',
+                'location': 'Kalisz'
+            },
+            {
+                'name': 'Marta Sikora',
+                'location': 'Bydgoszcz'
+            }
+        ]
     }
 
 ]
