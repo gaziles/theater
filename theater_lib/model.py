@@ -1,7 +1,7 @@
 theaters = [
 
     {
-        'name': 'Teatr Muzyczny Roma',
+        'name': 'Teatr Aurora',
         'location': 'Warszawa',
 
         'clients': [
