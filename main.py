@@ -1,5 +1,4 @@
 from theater_lib.controller import *
-
 from theater_lib.map import (
     generate_theater_map,
     generate_clients_map,
@@ -27,7 +26,6 @@ def menu():
 
 
 def main():
-
     while True:
 
         menu()
