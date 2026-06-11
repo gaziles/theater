@@ -1,7 +1,7 @@
 theaters = [
 
     {
-        'name': 'Teatr Aurora',
+        'name': 'Teatr Muzyczny Roma',
         'location': 'Warszawa',
 
         'clients': [
@@ -12,7 +12,7 @@ theaters = [
             },
             {
                 'name': 'Kamil Śruba',
-                'location': 'Płock',
+                'location': 'Piaseczno',
                 'performances': ['Cats', 'Hamilton']
             }
         ],
@@ -20,11 +20,11 @@ theaters = [
         'employees': [
             {
                 'name': 'Jan Kowalski',
-                'location': 'Sochaczew'
+                'location': 'Warszawa'
             },
             {
                 'name': 'Maria Nowak',
-                'location': 'Radom'
+                'location': 'Pruszków'
             }
         ]
     },
@@ -49,11 +49,11 @@ theaters = [
         'employees': [
             {
                 'name': 'Adam Nowak',
-                'location': 'Zakopane'
+                'location': 'Kraków'
             },
             {
                 'name': 'Karolina Lis',
-                'location': 'Częstochowa'
+                'location': 'Skawina'
             }
         ]
     },
@@ -78,7 +78,7 @@ theaters = [
         'employees': [
             {
                 'name': 'Paweł Wójcik',
-                'location': 'Koszalin'
+                'location': 'Gdańsk'
             },
             {
                 'name': 'Agnieszka Mazur',
@@ -99,7 +99,7 @@ theaters = [
             },
             {
                 'name': 'Michał Sikora',
-                'location': 'Legnica',
+                'location': 'Oleśnica',
                 'performances': ['Makbet', 'Król Lear']
             }
         ],
@@ -107,11 +107,11 @@ theaters = [
         'employees': [
             {
                 'name': 'Rafał Kurek',
-                'location': 'Zielona Góra'
+                'location': 'Wrocław'
             },
             {
                 'name': 'Joanna Maj',
-                'location': 'Łódź'
+                'location': 'Trzebnica'
             }
         ]
     },
@@ -128,7 +128,7 @@ theaters = [
             },
             {
                 'name': 'Weronika Sowa',
-                'location': 'Toruń',
+                'location': 'Swarzędz',
                 'performances': ['Hair', 'Cats', 'Chicago']
             }
         ],
@@ -136,11 +136,11 @@ theaters = [
         'employees': [
             {
                 'name': 'Kamil Górski',
-                'location': 'Kalisz'
+                'location': 'Poznań'
             },
             {
                 'name': 'Marta Sikora',
-                'location': 'Bydgoszcz'
+                'location': 'Luboń'
             }
         ]
     }

@@ -64,7 +64,7 @@ def show_clients():
 
 def add_client():
     theater_name = input("Podaj nazwę teatru: ")
-    client_name = input("Podaj imię klienta: ")
+    client_name = input("Podaj imię i nazwisko klienta: ")
     client_location = input("Podaj miasto klienta: ")
 
     for theater in theaters:
@@ -87,7 +87,7 @@ def add_client():
 
 def delete_client():
     theater_name = input("Podaj nazwę teatru: ")
-    client_name = input("Podaj imię klienta: ")
+    client_name = input("Podaj imię i nazwisko klienta: ")
 
     for theater in theaters:
 
@@ -120,7 +120,7 @@ def show_employees():
 
 def add_employee():
     theater_name = input("Podaj nazwę teatru: ")
-    employee_name = input("Podaj imię pracownika: ")
+    employee_name = input("Podaj imię i nazwisko pracownika: ")
     employee_location = input("Podaj miasto pracownika: ")
 
     for theater in theaters:
@@ -142,7 +142,7 @@ def add_employee():
 
 def delete_employee():
     theater_name = input("Podaj nazwę teatru: ")
-    employee_name = input("Podaj imię pracownika: ")
+    employee_name = input("Podaj imię i nazwisko pracownika: ")
 
     for theater in theaters:
 
@@ -165,7 +165,7 @@ def delete_employee():
 
 def show_client_performances():
 
-    client_name = input("Podaj imię klienta: ")
+    client_name = input("Podaj imię i nazwisko klienta: ")
 
     for theater in theaters:
 
@@ -185,7 +185,7 @@ def show_client_performances():
 
 def add_performance_to_client():
 
-    client_name = input("Podaj imię klienta: ")
+    client_name = input("Podaj imię i nazwisko klienta: ")
     performance = input("Podaj nazwę spektaklu: ")
 
     for theater in theaters:
