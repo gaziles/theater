@@ -128,7 +128,7 @@ theaters = [
             },
             {
                 'name': 'Weronika Sowa',
-                'location': 'Swarzędz',
+                'location': 'Kalisz',
                 'performances': ['Hair', 'Cats', 'Chicago']
             }
         ],
